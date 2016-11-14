@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Liste des cadeaux</title>
+<style type="text/css">
+  .titreApplication
+  {
+    color:purple;
+    background-color:yellow;
+    text-align:center;
+  }
+  
+  .listeCadeaux
+  {
+    padding:0;
+    text-align:center;
+    list-style-type:none;
+  }
+  
+  .itemCadeau
+  {
+    padding:0.5rem;
+    margin-bottom:0.3rem;
+    background-color:purple;
+  }
+
+  .itemCadeau:hover
+  {
+    background-color:pink;
+  }
+  
+  .lienCadeau
+  {
+    color:white;
+    text-decoration:none;
+  }
+  
+  
+  
+</style>
+<script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script> 
+</head>
+<body>
+  Il y a une erreur dans le programme
+  
+  <script type="text/html" id="page-liste-cadeaux"> 	
+    <h1 class="titreApplication">Liste de Noel</h1>
+    <ul class="listeCadeaux" id="liste-cadeaux"></ul>
+    <a href="#ajouter-cadeau">Ajouter un cadeau</a>
+  </script>
+
+  <!-- TODO: faire item-liste-cadeaux -->
+  <script type="text/html" id="item-liste-cadeaux"> 
+    <li class='itemCadeau'>
+      <a class='lienCadeau' href='#cadeau/{ID}'>
+      {NOM}
+      </a>
+    </li>
+  </script>
+  
+  <script type="text/html" id="page-cadeau"> 	
+    <h1 id="cadeau-nom">{NOM}</h1>
+    <h2 id="cadeau-marque">{MARQUE}</h2>
+    <p id="cadeau-description">{DESCRIPTION}</p>
+    <a href="#">Retour à la liste</a>
+  </script>
+
+  <script type="text/html" id="page-ajouter-cadeau"> 	
+    <form>
+      <label for="cadeau-nom">Nom</label>
+      <input type="text" id="cadeau-nom"/>
+      
+      <label for="cadeau-marque">Marque</label>
+      <input type="text" id="cadeau-marque"/>
+      
+      <label for="cadeau-description">Description</label>
+      <textarea id="cadeau-description"></textarea>
+      
+      <input type="submit" value="Ajouter"/>
+    </form>
+    <a href="#">Retour à la liste sans ajouter</a>
+  </script>
+
+  
+  <script src="donnees/CadeauDAO.js"></script> 
+  <script src="vue/AjouterCadeauVue.js"></script>
+  <script src="vue/CadeauVue.js"></script>
+  <script src="vue/ListeCadeauxVue.js"></script>
+  <script src="application.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
