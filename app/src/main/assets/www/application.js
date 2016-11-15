@@ -10,18 +10,18 @@ var applicationListeToDo = {
   },
   naviguer:function()
   {
-    //alert("Naviguer selon : "+window.location.hash);
     var ancre = window.location.hash;
     if(!ancre)
     {
       this.listeToDoVue = new listeToDoVue(this.listeToDo);
       this.listeToDoVue.afficher();
     }
+    /*
     else if(ancre.match(/^#ajouter-todo/))
     {
       this.ajouterToDoVue = new ajouterToDoVue();
       this.ajouterToDoVue.afficher();
-    }
+    }*/
     else
     {
       var trouvailles = ancre.match(/^#todo\/([0-9]+)/);
