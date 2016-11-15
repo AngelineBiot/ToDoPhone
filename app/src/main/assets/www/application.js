@@ -1,8 +1,8 @@
-var applicationListeNoel = {
+var applicationListeToDo = {
   lancer:function()
   {
-    this.cadeauDAO = new CadeauDAO();
-    this.liste_cadeaux = this.cadeauDAO.listerTousLesCadeaux(); 
+    this.toDoDAO = new ToDoDAO();
+    this.listeToDo = this.toDoDAO.listerTousLesToDo();
     
     $(window).on('hashchange', $.proxy(this.naviguer, this));
     
@@ -14,26 +14,26 @@ var applicationListeNoel = {
     var ancre = window.location.hash;
     if(!ancre)
     {
-      this.listeCadeauxVue = new ListeCadeauxVue(this.liste_cadeaux);
-      this.listeCadeauxVue.afficher();      
+      this.listeToDoVue = new listeToDoVue(this.listeToDo);
+      this.listeToDoVue.afficher();
     }
-    else if(ancre.match(/^#ajouter-cadeau/)) 
+    else if(ancre.match(/^#ajouter-todo/))
     {
-      this.ajouterCadeauVue = new AjouterCadeauVue();
-      this.ajouterCadeauVue.afficher(); 
+      this.ajouterToDoVue = new ajouterToDoVue();
+      this.ajouterToDoVue.afficher();
     }
     else
     {
-      var trouvailles = ancre.match(/^#cadeau\/([0-9]+)/);
-      var id_cadeau = trouvailles[1];
-      var cadeau = this.cadeauDAO.trouverCadeauParId(id_cadeau);
-      this.cadeauVue = new CadeauVue(cadeau);
-      this.cadeauVue.afficher();    
+      var trouvailles = ancre.match(/^#todo\/([0-9]+)/);
+      var idToDo = trouvailles[1];
+      var todo = this.toDoDAO.trouverToDoParId(idToDo);
+      this.toDoVue = new toDoVue(todo);
+      this.toDoVue.afficher();
     }
   }
 };
 
-applicationListeNoel.lancer();
+applicationListeToDo.lancer();
 
 
 
