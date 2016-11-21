@@ -1,35 +1,56 @@
-var applicationListeToDo = {
+var applicationListeToDo =
+{
   lancer:function()
   {
-    this.toDoDAO = new ToDoDAO();
-    this.listeToDo = this.toDoDAO.listerTousLesToDo();
-    
     $(window).on('hashchange', $.proxy(this.naviguer, this));
-    
+
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/))
+    {
+      $(document).on('deviceready', $.proxy(this.initialiserPourDonnees, this));
+    }
+    else
+    {
+      this.initialiserPourDonnees();
+    }
+  },
+
+  initialiserPourDonnees:function()
+  {
+    this.toDoDAO = new ToDoDAO();
     this.naviguer();
   },
+
   naviguer:function()
   {
     var ancre = window.location.hash;
     if(!ancre)
     {
-      this.listeToDoVue = new listeToDoVue(this.listeToDo);
-      this.listeToDoVue.afficher();
+      this.toDoDAO.listerTousLesToDo($.proxy(this.afficherTousLesToDo, this));
     }
-    /*
     else if(ancre.match(/^#ajouter-todo/))
     {
-      this.ajouterToDoVue = new ajouterToDoVue();
-      this.ajouterToDoVue.afficher();
-    }*/
+      this.ajouterToDoVue = new AjouterToDoVue();
+      this.ajouterToDoVue.afficher($.proxy(this.sauvegarderNouveauToDo, this));
+    }
     else
     {
       var trouvailles = ancre.match(/^#todo\/([0-9]+)/);
       var idToDo = trouvailles[1];
       var todo = this.toDoDAO.trouverToDoParId(idToDo);
-      this.toDoVue = new toDoVue(todo);
+      this.toDoVue = new ToDoVue(todo);
       this.toDoVue.afficher();
     }
+  },
+
+  sauvegarderNouveauToDo:function(todo)
+  {
+    this.toDoDAO.ajouterToDo(todo);
+  },
+
+  afficherTousLesToDo:function(listeToDo)
+  {
+    this.listeToDoVue = new listeToDoVue(listeToDo);
+    this.listeToDoVue.afficher();
   }
 };
 

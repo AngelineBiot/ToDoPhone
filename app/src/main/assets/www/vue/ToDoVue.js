@@ -1,9 +1,9 @@
-var toDoVue = function(todo)
+var ToDoVue = function(todo)
 {
   this.afficher = function()
   {
     var htmlEnConstruction = 
-      toDoVue.html
+      ToDoVue.html
       .replace("{NOM}",todo.nom)
       .replace("{DATE}",todo.date)
       .replace("{DESCRIPTION}",todo.description);
@@ -11,6 +11,6 @@ var toDoVue = function(todo)
     $("body").html(htmlEnConstruction);
   }
 }
-toDoVue.html = $("#page-todo").html();
+ToDoVue.html = $("#page-todo").html();
 
 // TODO : revenir à la liste

@@ -5,10 +5,10 @@ var listeToDoVue = function(listeToDo)
     $("body").html(listeToDoVue.html);
     var htmlListeToDo = $("#liste-todo");
     var htmlEnConstruction = "";
-    
+
     for(var noToDo in listeToDo)
     {
-        htmlEnConstruction += 
+        htmlEnConstruction +=
           listeToDoVue.html_item
           .replace("{ID}",listeToDo[noToDo].id)
           .replace("{NOM}",listeToDo[noToDo].nom);

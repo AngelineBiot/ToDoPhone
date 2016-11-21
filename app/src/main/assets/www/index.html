@@ -46,7 +46,7 @@
   <script type="text/html" id="page-liste-todo">
     <h1 class="titreApplication">To Do Liste</h1>
     <ul class="listeToDo" id="liste-todo"></ul>
-    <!-- <a href="#ajouter-todo">Ajouter un todo</a> -->
+    <a href="#ajouter-todo">Ajouter un todo</a>
   </script>
 
   <script type="text/html" id="item-liste-todo">
@@ -63,37 +63,31 @@
     <p id="todo-description">{DESCRIPTION}</p>
     <a href="#">Retour à la liste</a>
   </script>
-<!--
+
   <script type="text/html" id="page-ajouter-todo">
-    <form>
+    <form id = "formulaire-ajouter">
 
-      <div>
-        <label for="todo-nom">Nom</label>
-        <input type="text" id="todo-nom"/>
-      </div>
+      <label for="todo-nom">Nom</label>
+      <input type="text" id="todo-nom"/>
 
       <br>
 
-      <div>
-        <label for="todo-date">Date</label>
-        <input type="text" id="todo-date"/>
-      </div>
+      <label for="todo-date">Date</label>
+      <input type="text" id="todo-date"/>
 
       <br>
 
-      <div>
-        <label for="todo-description">Description</label>
-        <textarea id="todo-description"></textarea>
-      </div>
+      <label for="todo-description">Description</label>
+      <textarea id="todo-description"></textarea>
 
       <br>
-      
+
       <input type="submit" value="Ajouter"/>
     </form>
     <a href="#">Retour à la liste sans ajouter</a>
   </script>
--->
   
+  <script src="modele/ToDo.js"></script>
   <script src="donnees/ToDoDAO.js"></script>
   <script src="vue/AjouterToDoVue.js"></script>
   <script src="vue/ToDoVue.js"></script>
