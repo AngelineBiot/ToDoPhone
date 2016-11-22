@@ -1,8 +1,17 @@
 package cgmatane.qc.ca.todophone;
 
-/**
- * Created by 1634165 on 10/11/2016.
- *
- */
-public class ToDoPhone {
+import android.os.Bundle;
+import org.apache.cordova.*;
+import org.apache.cordova.DroidGap;
+
+public class ToDoPhone extends DroidGap {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        super.init();
+        super.loadUrl(Config.getStartUrl());
+        super.loadUrl("file:///android_asset/www/index.html");
+    }
 }

@@ -36,8 +36,13 @@ var applicationListeToDo =
     {
       var idTrouve = ancre.match(/^#modifier-todo\/([0-9]+)/);
       var idToDoAModifier = idTrouve[1];
+	  
+      console.log("applicationListeToDo:naviguer:idToDoAModifier:" + idToDoAModifier);
+	  
       var todoAModifier = this.toDoDAO.trouverToDoParId(idToDoAModifier);
-
+	  
+      console.log("applicationListeToDo:naviguer:todoAModifier.id:" + todoAModifier.id);
+	  
       this.modifierToDoVue = new ModifierToDoVue(todoAModifier);
       this.modifierToDoVue.afficher($.proxy(this.sauvegarderToDoModifie, this));
     }

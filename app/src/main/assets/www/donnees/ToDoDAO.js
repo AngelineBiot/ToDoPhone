@@ -101,55 +101,18 @@ var ToDoDAO = function()
     );
   };
 
-  this.listerTousLesToDo = function(finalisation)
-  {
-    var self = this;
-  	self.baseDeDonnees.transaction
-  	(
-      function(operation)
-      {
-        var SQL_SELECTION = "SELECT * FROM todo";
-        operation.executeSql
-        (
-          SQL_SELECTION,
-          [],
-          function(operation, resultat)
-          {
-            self.listeToDo = [];
-            for(var position = 0; position < resultat.rows.length; position++)
-            {
-              var enregistrementToDo = resultat.rows.item(position);
-              var todo =
-                new ToDo
-                (
-                  enregistrementToDo.id,
-                  enregistrementToDo.nom,
-                  enregistrementToDo.date,
-                  enregistrementToDo.description
-                );
-              self.listeToDo[self.listeToDo.length] = todo;
-            }
-          }
-        );
-      },
-      this.reagirErreur,
-      function()
-      {
-        finalisation(self.listeToDo);
-      }
-    );
-  }
+
 
   this.reagirErreur = function(erreur)
   {
     console.log("ERREUR:SQL:" + erreur.code + ":" + erreur.message);
-    alert("ERREUR:SQL:" + erreur.code + ":" + erreur.message);
+    //alert("ERREUR:SQL:" + erreur.code + ":" + erreur.message);
   }
 
   this.reagirSucces = function()
   {
   	console.log("SUCCES:SQL:");
-  	alert("SUCCES:SQL:");
+  	//alert("SUCCES:SQL:");
   }
 
   this.initialiser();
@@ -158,6 +121,7 @@ var ToDoDAO = function()
   {
     for(var noToDo in this.listeToDo)
     {
+	  
       if(this.listeToDo[noToDo].id == idToDo)
       {
         return this.listeToDo[noToDo];
