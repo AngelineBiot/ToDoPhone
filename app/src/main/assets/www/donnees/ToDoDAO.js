@@ -34,6 +34,21 @@ var ToDoDAO = function()
     );
   }
 
+  this.modifierToDo = function(todo)
+  {
+    this.baseDeDonnees.transaction
+    (
+      function(operation)
+      {
+        var SQL_MODIFICATION = "UPDATE todo SET nom = ?, date = ?, description = ? WHERE id = ?;";
+        var parametres = [todo.nom, todo.date,todo.description,todo.id];
+        operation.executeSql(SQL_MODIFICATION, parametres);
+      },
+      this.reagirErreur,
+      this.reagirSucces
+    );
+  }
+
   this.listerTousLesToDo = function(finalisation)
   {
 	this.baseDeDonnees.transaction

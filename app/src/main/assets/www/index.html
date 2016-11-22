@@ -61,6 +61,8 @@
     <h1 id="todo-nom">{NOM}</h1>
     <h2 id="todo-date">{DATE}</h2>
     <p id="todo-description">{DESCRIPTION}</p>
+    <a href="#modifier-todo/{ID}">Modifier le todo</a>
+    <br>
     <a href="#">Retour à la liste</a>
   </script>
 
@@ -86,10 +88,36 @@
     </form>
     <a href="#">Retour à la liste sans ajouter</a>
   </script>
-  
+
+  <script type="text/html" id="page-modifier-todo">
+    <form id = "formulaire-modifier">
+
+      <label for="todo-nom">Nom</label>
+      <input type="text" id="todo-nom" value="{NOM}"/>
+
+      <br>
+
+      <label for="todo-date">Date</label>
+      <input type="text" id="todo-date" value="{DATE}"/>
+
+      <br>
+
+      <label for="todo-description">Description</label>
+      <textarea id="todo-description">{DESCRIPTION}</textarea>
+
+      <br>
+
+      <input type="submit" value="Modifier"/>
+    </form>
+    <a  href='#'>
+      Retour a la liste sans modifier
+    </a>
+  </script>
+
   <script src="modele/ToDo.js"></script>
   <script src="donnees/ToDoDAO.js"></script>
   <script src="vue/AjouterToDoVue.js"></script>
+  <script src="vue/ModifierToDoVue.js"></script>
   <script src="vue/ToDoVue.js"></script>
   <script src="vue/ListeToDoVue.js"></script>
   <script src="application.js"></script>

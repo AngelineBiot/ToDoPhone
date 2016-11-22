@@ -53,5 +53,12 @@ var ToDoDAO = function()
     this.listeToDo[todo.id] = todo;
 
     localStorage['todo'] = JSON.stringify(this.listeToDo);
+  };
+
+  this.modifierToDo = function(todo)
+  {
+    this.listeToDo[todo.id] = todo;
+
+    localStorage['todo'] = JSON.stringify(this.listeToDo);
   }
 }

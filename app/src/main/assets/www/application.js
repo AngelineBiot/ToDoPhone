@@ -32,6 +32,15 @@ var applicationListeToDo =
       this.ajouterToDoVue = new AjouterToDoVue();
       this.ajouterToDoVue.afficher($.proxy(this.sauvegarderNouveauToDo, this));
     }
+    else if(ancre.match(/^#modifier-todo\/([0-9]+)/))
+    {
+      var idTrouve = ancre.match(/^#modifier-todo\/([0-9]+)/);
+      var idToDoAModifier = idTrouve[1];
+      var todoAModifier = this.toDoDAO.trouverToDoParId(idToDoAModifier);
+
+      this.modifierToDoVue = new ModifierToDoVue(todoAModifier);
+      this.modifierToDoVue.afficher($.proxy(this.sauvegarderToDoModifie, this));
+    }
     else
     {
       var trouvailles = ancre.match(/^#todo\/([0-9]+)/);
@@ -45,6 +54,11 @@ var applicationListeToDo =
   sauvegarderNouveauToDo:function(todo)
   {
     this.toDoDAO.ajouterToDo(todo);
+  },
+
+  sauvegarderToDoModifie:function(todo)
+  {
+    this.toDoDAO.modifierToDo(todo);
   },
 
   afficherTousLesToDo:function(listeToDo)

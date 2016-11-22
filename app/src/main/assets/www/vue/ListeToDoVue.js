@@ -8,8 +8,8 @@ var listeToDoVue = function(listeToDo)
 
     for(var noToDo in listeToDo)
     {
-        htmlEnConstruction +=
-          listeToDoVue.html_item
+      htmlEnConstruction +=
+        listeToDoVue.html_item
           .replace("{ID}",listeToDo[noToDo].id)
           .replace("{NOM}",listeToDo[noToDo].nom);
     }
