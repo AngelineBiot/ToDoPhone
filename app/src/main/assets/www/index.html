@@ -2,42 +2,7 @@
 <html>
 <head>
 <title>To Do Liste</title>
-<style type="text/css">
-  .titreApplication
-  {
-    color:purple;
-    background-color:lightgreen;
-    text-align:center;
-  }
-  
-  .listeToDo
-  {
-    padding:0;
-    text-align:center;
-    list-style-type:none;
-  }
-  
-  .itemToDo
-  {
-    padding:0.5rem;
-    margin-bottom:0.3rem;
-    background-color:purple;
-  }
-
-  .itemToDo:hover
-  {
-    background-color:lightblue;
-  }
-  
-  .lienToDo
-  {
-    color:white;
-    text-decoration:none;
-  }
-  
-  
-  
-</style>
+  <link href="style/style.css" rel="stylesheet" media="all" type="text/css">
   <!--script type="text/javascript" charset="utf-8" src="lib/cordova.js"></script-->
   <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
 </head>
@@ -47,7 +12,7 @@
   <script type="text/html" id="page-liste-todo">
     <h1 class="titreApplication">To Do Liste</h1>
     <ul class="listeToDo" id="liste-todo"></ul>
-    <a href="#ajouter-todo">Ajouter un todo</a>
+    <a href="#ajouter-todo" class="lien-ajouter"> + </a>
   </script>
 
   <script type="text/html" id="item-liste-todo">
@@ -63,7 +28,6 @@
     <h2 id="todo-date">{DATE}</h2>
     <p id="todo-description">{DESCRIPTION}</p>
     <a href="#modifier-todo/{ID}">Modifier le todo</a>
-    <br>
     <a href="#">Retour à la liste</a>
   </script>
 
@@ -73,17 +37,11 @@
       <label for="todo-nom">Nom</label>
       <input type="text" id="todo-nom"/>
 
-      <br>
-
       <label for="todo-date">Date</label>
       <input type="text" id="todo-date"/>
 
-      <br>
-
       <label for="todo-description">Description</label>
       <textarea id="todo-description"></textarea>
-
-      <br>
 
       <input type="submit" value="Ajouter"/>
     </form>

@@ -1,0 +1,91 @@
+@font-face
+{
+    font-family: AlexBrush;
+    src: url('AlexBrush-Regular.ttf');
+}
+
+html
+{
+  background-image: url(rayures.jpg);
+}
+
+body
+{
+  font-family: AlexBrush, serif;
+  text-align: center;
+  font-style: bold;
+  margin : 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.lien-ajouter
+{
+  background-color: lightgreen;
+  font-style: serif;
+  color: purple;
+  font-size: 60px;
+  margin : 10% 0%;
+  padding : 5% 10%;
+  border-radius : 100%;
+}
+
+.titreApplication
+{
+  color: purple;
+  background-color: lightgreen;
+  text-align: center;
+  font-size: 80px;
+  pagging : 10% 0;
+}
+
+.listeToDo
+{
+  text-align: center;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  padding : 10% 30%;
+}
+
+.itemToDo
+{
+  background-color: purple;
+  font-size: 60px;
+  margin : 10% 0;
+  padding : 5% 0;
+  border-radius : 50%;
+}
+
+.itemToDo:hover
+{
+  background-color: violet;
+}
+
+.lienToDo
+{
+  color: white;
+  text-decoration: none;
+}
+
+.lienToDo:hover
+{
+  color: green;
+}
+
+#todo-nom
+{
+  font-size: 80px;
+}
+
+#todo-date
+{
+  font-size: 50px;
+}
+
+#todo-description
+{
+  font-size: 30px;
+}
