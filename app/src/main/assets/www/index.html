@@ -3,7 +3,7 @@
 <head>
 <title>To Do Liste</title>
   <link href="style/style.css" rel="stylesheet" media="all" type="text/css">
-  <!--script type="text/javascript" charset="utf-8" src="lib/cordova.js"></script-->
+  <script type="text/javascript" charset="utf-8" src="lib/cordova.js"></script>
   <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
 </head>
 <body>
@@ -34,16 +34,16 @@
   <script type="text/html" id="page-ajouter-todo">
     <form id = "formulaire-ajouter">
 
-      <label for="todo-nom">Nom</label>
+      <label class="formulaire" for="todo-nom">Nom</label>
       <input type="text" id="todo-nom"/>
 
-      <label for="todo-date">Date</label>
+      <label class="formulaire" for="todo-date">Date</label>
       <input type="text" id="todo-date"/>
 
-      <label for="todo-description">Description</label>
+      <label class="formulaire" for="todo-description">Description</label>
       <textarea id="todo-description"></textarea>
 
-      <input type="submit" value="Ajouter"/>
+      <input class="formulaire" type="submit" value="Ajouter"/>
     </form>
     <a href="#">Retour à la liste sans ajouter</a>
   </script>
@@ -51,16 +51,16 @@
   <script type="text/html" id="page-modifier-todo">
     <form id = "formulaire-modifier">
 
-      <label for="todo-nom">Nom</label>
+      <label class="formulaire" for="todo-nom">Nom</label>
       <input type="text" id="todo-nom" value="{NOM}"/>
 
-      <label for="todo-date">Date</label>
+      <label class="formulaire" for="todo-date">Date</label>
       <input type="text" id="todo-date" value="{DATE}"/>
 
-      <label for="todo-description">Description</label>
+      <label class="formulaire" for="todo-description">Description</label>
       <textarea id="todo-description">{DESCRIPTION}</textarea>
 
-      <input type="submit" value="Modifier"/>
+      <input class="formulaire" type="submit" value="Modifier"/>
     </form>
     <a  href='#'>
       Retour a la liste sans modifier

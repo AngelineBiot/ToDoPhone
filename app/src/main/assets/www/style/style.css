@@ -7,12 +7,13 @@
 html
 {
   background-image: url(rayures.jpg);
+  font-style: bold;
+  text-align: center;
 }
 
 body
 {
   font-family: AlexBrush, serif;
-  text-align: center;
   font-style: bold;
   margin : 0;
 }
@@ -20,6 +21,9 @@ body
 a
 {
   text-decoration: none;
+  font-size: 40px;
+  display: block;
+  margin : 10% 0%;
 }
 
 .lien-ajouter
@@ -31,20 +35,18 @@ a
   margin : 10% 0%;
   padding : 5% 10%;
   border-radius : 100%;
+  display: inline;
 }
 
 .titreApplication
 {
   color: purple;
   background-color: lightgreen;
-  text-align: center;
   font-size: 80px;
-  pagging : 10% 0;
 }
 
 .listeToDo
 {
-  text-align: center;
   list-style-type: none;
   -webkit-padding-start: 0px;
   padding : 10% 30%;
@@ -67,7 +69,7 @@ a
 .lienToDo
 {
   color: white;
-  text-decoration: none;
+  font-size: 60px;
 }
 
 .lienToDo:hover
@@ -78,14 +80,36 @@ a
 #todo-nom
 {
   font-size: 80px;
+  display: block;
 }
 
 #todo-date
 {
   font-size: 50px;
+  display: block;
 }
 
 #todo-description
 {
   font-size: 30px;
+  display: block;
+  margin-bottom : 20%;
+}
+
+.formulaire
+{
+  display: block;
+  font-size: 40px;
+}
+
+input
+{
+  width: 50%;
+  margin: auto;
+}
+
+textarea
+{
+  width: 60%;
+  margin: auto;
 }

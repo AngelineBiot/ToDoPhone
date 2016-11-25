@@ -2,11 +2,130 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a54d7aeb1e29e1d4cf0e8d126b3063c21810e76e">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f35089c1bfc80b8013f534d00433d331968f0870\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_cb9d5547f0b477eb842c2b2fca15f11b489e9173\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_6a82c9e3a6fdd51e553c570937067d97293112cf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_c95ede4dbaf90c801e8a08acb75bb564e41071e6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_7a518dde227d51c27d6da80ca267da1d8759a37b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_bc1f40614e835b99e9fce7190a8b37704b34971a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_c1ea68114dab19945e3cf520707f424d34ec57c8\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="bd457ef02a651a218cdc724178d6c9e38dd99ec0">
+        sha1="f527d94b94c1e6a5b09865c1805efe46869bd448">
         <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8c19425983691bc61b11c6b01b9f1cf92cd026b5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_a370c5b09832dccc0a81a2904f29d2e8d03cc4b7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_68c68fac902dcc5d00f5343df86a151dce3111b2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_c158a4faf4d6d3d026d7f5ef42a6dd62fabd01ea\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_8fa0097b811d9f1a639109d3e1fbe08c0c0b1617\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_f09c2e3cfc93cce590b2e5f4e8bc428ce12ee72b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\libs\cordova-2.9.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1c00db30c9cdad3676aeefd78e37b716364b5259">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\2\cordova-2.9.0_a5d4b4dae4480ce90e3ff3c037aa3cc4b0ba0f9b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_3df6349f532adece2047ab016154b693f686a395\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_dede3fc2fc4d1fadfbcf630a0725573cfd14cac9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_d598952b922fcf1c3f48e0f9dbdbdd4ff9a22a30\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\1634165\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\1634165\Desktop\CoursDEC\Prog_embarque\ToDoPhone\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_2d8eacfb565fff4911a99a5924ab104a7f97ffae\classes.dex" />
     </item>
 
 </items>
